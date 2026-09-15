@@ -1,1 +1,8 @@
-WIP
+# A SIMPLE NIGHTVISION COMMAND FOR YOUR PLAYERS TO USE
+nightvision:
+  type: player_command
+  conditions:
+  - '%mainCommand% startsWith /nv'
+  actions:
+    default:
+    - 'todo'
