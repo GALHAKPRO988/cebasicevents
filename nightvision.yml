@@ -5,4 +5,5 @@ nightvision:
   - '%mainCommand% startsWith /nv'
   actions:
     default:
-    - 'todo'
+    - 'give_potion_effect: NIGHT_VISION;INFINITE;1;false;false'
+    - 'message: &fNight Vision &aActivated'
