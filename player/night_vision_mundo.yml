@@ -2,9 +2,9 @@
 # Cambia "MUNDO" por el nombre real de tu mundo.
 night_vision_mundo:
   type: repetitive
-  repetitive_time: 5
+  repetitive_time: 100
   conditions:
   - '%player_world% == MUNDO'
   actions:
     default:
-    - 'give_potion_effect: NIGHT_VISION;140;0;false;false'
+    - 'give_potion_effect: NIGHT_VISION;INFINITE;1;false;false'
