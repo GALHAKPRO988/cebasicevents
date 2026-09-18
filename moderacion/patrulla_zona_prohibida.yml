@@ -1,8 +1,8 @@
-# Comprueba cada 10s si un jugador está en la región de WorldGuard "zona_prohibida"
+# Comprueba cada 20 ticks si un jugador está en la región de WorldGuard "zona_prohibida"
 # y lo teletransporta de vuelta al spawn (requiere WorldGuard + PlaceholderAPI).
 patrulla_zona_prohibida:
   type: repetitive
-  repetitive_time: 10
+  repetitive_time: 20
   conditions:
   - '%worldguard_region_name% equals zona_prohibida'
   actions:
