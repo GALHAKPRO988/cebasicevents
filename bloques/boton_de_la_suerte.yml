@@ -1,6 +1,7 @@
 # Un botón de piedra en coordenadas concretas que da $500 al pulsarlo.
 # Ajusta block_x/y/z y block_world a la ubicación real del botón.
 boton_de_la_suerte:
+  one_time: true
   type: block_interact
   conditions:
   - '%block_x% == 20'
