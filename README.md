@@ -1,4 +1,4 @@
-# cebasicevents
+# CONDITIONAL EVENTS BASIC EVENTS (TEMPLATES)
 
 **DISCLAIMER: Esto fue creado por la comunidad, no es oficial. Recuerda siempre usar la wiki cuando hagas tus propios eventos. Nosotros no damos soporte del plugin. Estos son eventos MUY MUY básicos que solo son recomendables como templates para aquellos que acaban de empezar a usar el plugin.**
 
