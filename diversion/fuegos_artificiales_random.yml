@@ -1,0 +1,15 @@
+# Comando "/randomfirework" que lanza un fuego artificial de color aleatorio.
+fuegos_artificiales_random:
+  type: player_command
+  conditions:
+  - "%main_command% equalsIgnoreCase /randomfirework"
+  actions:
+    default:
+    - "cancel_event: true"
+    - "execute_action_group: firework1:70;firework2:30;firework3:30"
+    firework1:
+    - "firework: colors:YELLOW,RED type:BALL fade:AQUA power:0"
+    firework2:
+    - "firework: colors:BLACK,WHITE type:BURST power:1"
+    firework3:
+    - "firework: colors:GREEN,BLUE type:BURST power:1"

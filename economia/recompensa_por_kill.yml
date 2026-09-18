@@ -1,0 +1,20 @@
+# Da dinero al matar a otro jugador, con bonus si la víctima es VIP o Admin (rango Vault).
+recompensa_por_kill:
+  type: player_kill
+  conditions:
+  - '%victim% == PLAYER'
+  - '%target:vault_rank% == vip execute actions1'
+  - '%target:vault_rank% == admin execute actions2'
+  actions:
+    default:
+    - "message: &6Has matado a &e%target:player%"
+    - "message: &7Recibes: &a$100"
+    - "console_command: eco give %player% 100"
+    actions1:
+    - "message: &6Has matado a &e%target:player%"
+    - "message: &7Al ser &bVIP&7, recibes: &a$500"
+    - "console_command: eco give %player% 500"
+    actions2:
+    - "message: &6Has matado a &e%target:player%"
+    - "message: &7Al ser &4Admin&7, recibes: &a$1000"
+    - "console_command: eco give %player% 1000"

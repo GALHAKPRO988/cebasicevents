@@ -1,0 +1,10 @@
+# Da visión nocturna constante (sin parpadeo) a todo jugador que esté en el mundo indicado.
+# Cambia "minas" por el nombre real de tu mundo.
+night_vision_mundo:
+  type: repetitive
+  repetitive_time: 5
+  conditions:
+  - '%player_world% == minas'
+  actions:
+    default:
+    - 'give_potion_effect: NIGHT_VISION;140;0;false;false'

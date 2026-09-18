@@ -1,0 +1,22 @@
+# Impide romper y colocar bloques en el mundo "spawn".
+proteger_spawn_break:
+  type: block_break
+  conditions:
+  - '%block_world% == spawn'
+  actions:
+    default:
+    - 'cancel_event: true'
+    - "message: &cNo puedes romper bloques en este mundo."
+    - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+  ignore_with_permission: conditionalevents.ignore.proteger_spawn
+
+proteger_spawn_place:
+  type: block_place
+  conditions:
+  - '%block_world% == spawn'
+  actions:
+    default:
+    - 'cancel_event: true'
+    - "message: &cNo puedes colocar bloques en este mundo."
+    - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+  ignore_with_permission: conditionalevents.ignore.proteger_spawn

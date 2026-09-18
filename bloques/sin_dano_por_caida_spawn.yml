@@ -1,0 +1,9 @@
+# Sin daño por caída dentro del mundo "spawn".
+sin_dano_por_caida_spawn:
+  type: player_damage
+  conditions:
+  - '%cause% == FALL'
+  - '%player_world% == spawn'
+  actions:
+    default:
+    - 'cancel_event: true'

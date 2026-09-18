@@ -1,0 +1,11 @@
+# Comprueba cada 10s si un jugador está en la región de WorldGuard "zona_prohibida"
+# y lo teletransporta de vuelta al spawn (requiere WorldGuard + PlaceholderAPI).
+patrulla_zona_prohibida:
+  type: repetitive
+  repetitive_time: 10
+  conditions:
+  - '%worldguard_region_name% equals zona_prohibida'
+  actions:
+    default:
+    - "teleport: world;0;70;0;0;0"
+    - "message: &cNo tienes acceso a esta zona."

@@ -1,0 +1,6 @@
+# Mensaje de bienvenida al entrar al servidor.
+mensaje_bienvenida:
+  type: player_join
+  actions:
+    default:
+    - 'message: &eBienvenido %player% al servidor.'

@@ -1,0 +1,11 @@
+# BoxPvP: al colocar una tela de araña (COBWEB), se elimina sola tras 8 segundos.
+# Cambia el "8" de wait para ajustar el tiempo.
+cobweb_temporal:
+  type: block_place
+  conditions:
+  - '%block% == COBWEB'
+  actions:
+    default:
+    - 'message: &7Tela de araña colocada. Desaparecerá en 8 segundos.'
+    - 'wait: 8'
+    - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'

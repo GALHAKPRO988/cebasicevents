@@ -1,0 +1,14 @@
+# Logro con recompensa al minar 10 bloques de mineral de diamante.
+logro_minar_diamantes:
+  type: player_statistic
+  one_time: true
+  conditions:
+  - "%statistic_name% == MINE_BLOCK"
+  - "%block% == DIAMOND_ORE"
+  - "%new_value% == 10"
+  actions:
+    default:
+    - "centered_message: &a&l¡Logro Desbloqueado!"
+    - "centered_message:  &eMinar 10 bloques de Diamante"
+    - "centered_message:  &aRecompensa: &7$500"
+    - "console_command: eco give %player% 500"

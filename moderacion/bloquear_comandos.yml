@@ -1,0 +1,12 @@
+# Bloquea comandos de WorldEdit/cálculo que suelen usarse para explotar el chat o el servidor.
+# Añade más comandos con "or %main_command% equalsIgnoreCase /otro".
+bloquear_comandos:
+  type: player_command
+  conditions:
+  - '%main_command% equalsIgnoreCase //calc or %main_command% equalsIgnoreCase //solve
+    or %main_command% equalsIgnoreCase //eval'
+  actions:
+    default:
+    - 'cancel_event: true'
+    - 'message: &c¿Qué intentas hacer?'
+  ignore_with_permission: conditionalevents.ignore.bloquear_comandos

@@ -1,0 +1,16 @@
+# Un botón de piedra en coordenadas concretas que da $500 al pulsarlo.
+# Ajusta block_x/y/z y block_world a la ubicación real del botón.
+boton_de_la_suerte:
+  type: block_interact
+  conditions:
+  - '%block_x% == 20'
+  - '%block_y% == 60'
+  - '%block_z% == 20'
+  - '%block_world% == lobby'
+  - '%block% == STONE_BUTTON'
+  - '%action_type% == RIGHT_CLICK'
+  actions:
+    default:
+    - "message: &a¡Has recibido $500!"
+    - "console_command: eco give %player% 500"
+    - "playsound: ENTITY_PLAYER_LEVELUP;10;2"
