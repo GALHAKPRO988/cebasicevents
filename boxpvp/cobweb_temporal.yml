@@ -6,6 +6,6 @@ cobweb_temporal:
   - '%block% == COBWEB'
   actions:
     default:
-    - 'message: &7Tela de araña colocada. Desaparecerá en 8 segundos.'
+    - 'actionbar: &7Tela de araña colocada. Desaparecerá en 8 segundos.;40'
     - 'wait: 8'
     - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'
