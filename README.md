@@ -1,5 +1,7 @@
 # cebasicevents
 
+**DISCLAIMER: Esto fue creado por la comunidad, no es oficial. Recuerda siempre usar la wiki cuando hagas tus propios eventos. Nosotros no damos soporte del plugin. Estos son eventos MUY MUY básicos que solo son recomendables como templates para aquellos que acaban de empezar a usar el plugin.**
+
 Colección de templates listos para usar con el plugin **ConditionalEvents** (by ajneb97) para servidores Spigot/Paper.
 
 Cada archivo `.yml` define uno o más eventos que puedes copiar dentro del bloque de eventos de tu `config.yml` del plugin, o cargarlos como referencia y adaptarlos a tu servidor.
