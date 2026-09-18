@@ -1,9 +1,0 @@
-# A SIMPLE NIGHTVISION COMMAND FOR YOUR PLAYERS TO USE
-nightvision:
-  type: player_command
-  conditions:
-  - '%mainCommand% startsWith /nv'
-  actions:
-    default:
-    - 'give_potion_effect: NIGHT_VISION;INFINITE;1;false;false'
-    - 'message: &fNight Vision &aActivated'
