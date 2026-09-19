@@ -1,1 +1,7 @@
-WIP
+playtime_5min_reward:
+  type: repetitive
+  repetitive_time: 6000
+  actions:
+    default:
+    - 'console_command: eco give %player% 500'
+    - 'message: &a&lRecompensa: &fHas recibido &a+500$ &fpor jugar 5 minutos.'
